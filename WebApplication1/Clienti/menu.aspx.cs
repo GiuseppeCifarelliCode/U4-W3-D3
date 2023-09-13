@@ -15,8 +15,8 @@ namespace WebApplication1.Clienti
         protected void Page_Load(object sender, EventArgs e)
         {
             message.Visible = false;
-            listContainer.Visible = false; 
-
+            listContainer.Visible = false;
+            if(!IsPostBack) Pizze.Clear();
     }
 
         protected void addPizza_Click(object sender, EventArgs e)
