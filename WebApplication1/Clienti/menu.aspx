@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h3>SCEGLI LE TUE PIZZE!</h3>
     <asp:DropDownList ID="listaPizze" runat="server" CssClass="text-bg-secondary p-2">
         <asp:ListItem Value="margherita" Text="Margherita ($4.00)"></asp:ListItem>
         <asp:ListItem Value="diavola" Text="Diavola ($5.00)"></asp:ListItem>
