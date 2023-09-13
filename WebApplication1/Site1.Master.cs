@@ -12,7 +12,7 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Request.Cookies != null)
+            if (Request.Cookies[".ASPXAUTH"] != null)
             {
                 loginButton.Text = "Logout";
                 loginButton.CssClass = "btn btn-danger";
