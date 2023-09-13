@@ -42,15 +42,6 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.Button loginButton;
 
         /// <summary>
-        /// Controllo logoutButton.
-        /// </summary>
-        /// <remarks>
-        /// Campo generato automaticamente.
-        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button logoutButton;
-
-        /// <summary>
         /// Controllo ContentPlaceHolder1.
         /// </summary>
         /// <remarks>

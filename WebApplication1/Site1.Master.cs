@@ -12,23 +12,29 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            logoutButton.Visible = false;
-
             if (Request.Cookies != null)
             {
-                logoutButton.Visible = true;
+                loginButton.Text = "Logout";
+                loginButton.CssClass = "btn btn-danger";
             }
+            else
+            {
+                loginButton.Text = "Login";
+                loginButton.CssClass = "btn btn-primary";
+            }
+
         }
 
-        protected void logoutButton_Click(object sender, EventArgs e)
-        {
-            FormsAuthentication.SignOut();
-            Response.Redirect(FormsAuthentication.LoginUrl);
-        }
 
         protected void loginButton_Click(object sender, EventArgs e)
         {
+            if(loginButton.Text == "Login")
             Response.Redirect(FormsAuthentication.LoginUrl);
+            else
+            {
+                FormsAuthentication.SignOut();
+                Response.Redirect(FormsAuthentication.LoginUrl);
+            }
         }
     }
 }
